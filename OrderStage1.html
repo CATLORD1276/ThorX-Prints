@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThorX - Choose Product</title>
+
+     <style>
+        body {
+            background-color: rgb(232, 236, 232);
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .top-header-banner {
+            background-color: #ffffff;
+            color: rgb(82, 103, 77);
+            text-align: center;
+            padding: 30px 20px;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .logo-banner {
+            width: 70%;
+            max-width: 300px;
+            height: auto;
+        }
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .wide-card-wide {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 30px;
+            width: 96%;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center; 
+        }
+        .wide-card-wide h3 {
+            color: #0066cc;
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .product-image-grid {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+
+        .product-link {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px; 
+            text-decoration: none;
+        }
+        
+        .product-img {
+            width: 100%;
+            height: 500px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.2s; 
+        }
+        
+        .product-link:hover .product-img {
+            transform: scale(1.02);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(232, 236, 232);">
+    
+    <div class="top-header-banner">
+        <img src="Logo Horizontal.png" alt="ThorX Logo" class="logo-banner">
+        
+        <h1 style="text-align: center;"><big><b>ThorX - order via Gmail</b></big></h1>
+        <h1 style="text-align: center;"><i>Place an order via Gmail</i></h1>
+    </div>
+        
+    <div class="stack-container">
+        
+        <div class="wide-card-wide">
+            <h3>Select A Product</h3>
+            
+            <div class="product-image-grid">
+                <a href="ordercollared.html" class="product-link">
+                    <img src="Collared_Blue.jpeg" alt="Collared Blue" class="product-img">
+                </a>
+                
+                <a href="orderhoodie.html" class="product-link">
+                    <img src="hoodie black.jpeg" alt="Hoodie" class="product-img">
+                </a>
+                
+                <a href="ordershirt.html" class="product-link">
+                    <img src="Mens_Black_Premium.jpeg" alt="Mens Black Premium" class="product-img">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f1f1f1;">
+        <p>The Collared T-Shirt costs ₹850. The Hoodie costs ₹1600. The Mens Premium T-Shirt costs ₹800.</p>
+    </footer>
+</body>
+</html>

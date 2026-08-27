@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThorX - Place Order</title>
+
+    <style>
+        body {
+            background-color: rgb(232, 236, 232);
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .top-header-banner {
+            background-color: #ffffff;
+            color: rgb(82, 103, 77);
+            text-align: center;
+            padding: 30px 20px;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .logo-banner {
+            width: 70%;
+            max-width: 300px;
+            height: auto;
+        }
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        /* Card Container for Form Alignment */
+        .wide-card-wide {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 30px;
+            width: 96%;
+            max-width: 500px; /* Aligns and limits width */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .wide-card-wide h3 {
+            color: #0066cc;
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            color: #1a3a32;
+            display: block;
+            margin-top: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004999;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(232, 236, 232);">
+    
+    <div class="top-header-banner">
+        <h1 style="text-align: center;"><big><b>ThorX Order Portal</b></big></h1>
+        <h1 style="text-align: center;"><i>Place an order via Gmail</i></h1>
+    </div>
+        
+    <div class="stack-container">
+        <div class="wide-card-wide">
+            <a href="index.html" class="back-btn">← Back to Products</a>
+            <h3>Place Your Order!</h3>  
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d3a4fd43-03b6-4cb7-abe7-9f8f8f9b918e">
+
+                <label>Selected Product:</label>
+                <input type="text" name="Product" value="Collared T-Shirt" readonly style="background-color: #e0e0e0;">
+
+                <label>Choose Colour:</label>
+                <select name="Colour">
+                    <option value="Black">Black</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Navy Blue">Navy Blue</option>
+                    <option value="Red">Red</option>
+                    <option value="Sky Blue">Sky Blue</option>
+                    <option value="White">White</option>
+                    <option value="Dark Green">Dark Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Light Blue">Light Blue</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Orange">Orange</option>
+                </select>
+
+                <label>Choose Size:</label>
+                <select name="Size">
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                    <option value="XXL">Double XL (XXL)</option>
+                </select>
+
+                <label>Delivery Address / Location:</label>
+                <input type="text" name="Location" placeholder="Enter full address..." required>
+
+                <label>Your Email or Instagram Handle:</label>
+                <input type="text" name="Customer_Contact" placeholder="e.g. alex@gmail.com or @alex_designs" required>
+
+                <button type="submit">Submit Order Request 🚀</button>
+            </form>
+        </div>
+    </div>
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f1f1f1;">
+        <p>You will receive an email/message with the UPI or Payment details shortly after submission.</p>
+    </footer>
+</body>
+</html>
